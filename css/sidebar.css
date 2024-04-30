@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    display: flex;
+}
+.main {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    background-color: #fafbfe;
+}
+#sidebar {
+    width: 5rem;
+    min-width: 5rem;
+    z-index: 1000;
+    transition: all .25s ease-in-out;
+    background-color: #cacaca;
+    display: flex;
+    flex-direction: column;
+}
+#sidebar.expand {
+    width: 12rem;
+    min-width: 12rem;
+}
+.toggle-btn {
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    padding: 1rem 1.4rem;
+}
+.toggle-btn i {
+    font-size: 1.5rem;
+    color: #0d6efd;
+}
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+}
+#sidebar:not(.expand) .sidebar-logo a,
+#sidebar:not(.expand) a.sidebar-link span {
+    display: none;
+}
+.sidebar-nav {
+    padding: 2rem 0;
+    flex: 1 1 auto;
+}
+a.sidebar-link {
+    padding: .625rem 1.1rem;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    font-size: 0.6rem;
+    white-space: nowrap;
+    border-left: 3px solid transparent;
+}
+a.sidebar-link:hover {
+    background-color: rgba(255, 255, 255, .075);
+    border-left: 3px solid #3b7ddd;
+}
+.sidebar-link svg {
+    min-width: 32px;
+    min-height: 32px;
+}
+.sidebar-link span {
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+.sidebar-item {
+    position: relative;
+}
+#sidebar:not(.expand) .sidebar-item .sidebar-dropdown {
+    position: absolute;
+    top: 0;
+    left: 80px;
+    background-color: #0e2238;
+    padding: 0;
+    min-width: 15rem;
+    display: none;
+}
+#sidebar:not(.expand) .sidebar-item:hover .has-dropdown+.sidebar-dropdown {
+    display: block;
+    max-height: 15em;
+    width: 100%;
+    opacity: 1;
+}
