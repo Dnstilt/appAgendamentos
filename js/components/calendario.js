@@ -1,7 +1,7 @@
 document.getElementById('calendario').innerHTML = `
 <div class="tabs">
     <div class="tab">
-        <button class="tablinks" data-origin="tab1">Calendário</button> 
+        <button class="tablinks" data-origin="tab1">Cadastrar cliente</button> 
         <button class="tablinks" data-origin="tab2">Dashboard</button>
     </div>
         
