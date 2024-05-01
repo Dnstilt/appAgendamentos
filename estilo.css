@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    /*position: fixed;*/
+    width: 100%;
+}
+
+.logo {
+
+    margin-left: 5%;
+    /* border: 1px solid red; */
+    text-align: left;
+}
+
+.logo h1 {
+    color: #0038FF;
+    font-size: 30px;
+}
+
+.menu {
+    flex: 80%;
+    text-align: right;
+    padding: 20px;
+}
+
+.menu a {
+    color: #0038FF;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+
+#botao {
+    background:#0038FF;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 5px;
+    /*margin-right: 10%;
+    margin-left: 5%;*/
+}
+
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.headline {
+    margin-top: 30px;
+    margin-left: 10%;
+    flex: 40%;
+}
+
+.headline h2 {
+    font-weight: 900;
+    font-size: 20px;
+    color: #180f4a;
+    padding: 0;
+    margin: 0;
+}
+
+.headline p {
+    color: gray;
+    text-align: left;
+}
+
+.contact-btn {
+    margin-top: 20px;
+    display: inline-block;
+    background: #0038FF;
+    padding: 10px 25px;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+
+section {
+    display: inline-block;
+    margin: 80px;
+    /* border: 1px solid black; */
+    margin-left: 5%;
+    margin-right: 5px;
+    padding: 5%;
+    text-align: center;
+    /* width: 90%; */
+}
+
+.bloco {
+    background-color: #5438FF;
+    margin-top: 20px;
+    padding: 5%;
+    height: 500px;
+}
+
+.bloco1 {
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.card {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid #0038FF;
+    border-radius: 10px;
+}
+
+.texto-oculto {
+    display: none;
+}
+
+footer {
+    /* margin-top: 100px;*/
+    /*height: 200px;*/
+    background: #5438FF;
+    text-align: center;
+}
+
+.rodape {
+    padding: 5px;;
+}
+
+.whats {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
