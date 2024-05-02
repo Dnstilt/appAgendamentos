@@ -24,65 +24,71 @@
         <aside id="sidebar">
             <!--Sidebar-->
         </aside>
-        <!--Dados-->
         <div class="main d-flex flex-column bg-secondary">
             <div class="row bg-secondary-subtle ps-2 pe-2">
                 <a class="logo fs-3 text" style="font-family: Kanit, sans-serif; text-decoration: none;">Hora
                     decidida</a>
-                <table id="tabelaDados" class="table table-sm text-center" style="max-width: 1300px; margin: 0;">
-                    <!--Tabela com dados-->
-                </table>
-                <table id="tabelaEmpresas" class="table table-success table-striped" style="max-width: 1300px;">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Nome</th>
-                            <th scope="col">Endereço</th>
-                            <th scope="col">Telefone</th>
-                            <th scope="col">Ações</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Loja1</td>
-                            <td>Rua das selikihosadufhoas, 215</td>
-                            <td>(48)5687-4596</td>
-                            <td>
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary btn-sm rounded-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Editar
-                            </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Loja2</td>
-                            <td>Av. dos dkajusudgoaukkbd, 2156</td>
-                            <td>(48)8965-4588</td>
-                            <td>
-                                <button type="button" class="btn btn-primary btn-sm rounded-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Editar
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Loja3</td>
-                            <td>Av. das udgoaukkbd, 1589</td>
-                            <td>(48)8968-5488</td>
-                            <td>
-                                <button type="button" class="btn btn-primary btn-sm rounded-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Editar
-                                </button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-responsive-sm">
+                    <table id="tabelaDados" class="table table-sm text-center" style="max-width: 1300px; margin: 0;">
+                        <!--Tabela com dados-->
+                    </table>
+                </div>
+                <div class="table-responsive-sm">
+                    <table id="tabelaEmpresas" class="table table-success table-striped" style="max-width: 1300px;">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Endereço</th>
+                                <th scope="col">Telefone</th>
+                                <th scope="col">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Loja1</td>
+                                <td>Rua das selikihosadufhoas, 215</td>
+                                <td>(48)5687-4596</td>
+                                <td>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary btn-sm rounded-3"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Editar
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Loja2</td>
+                                <td>Av. dos dkajusudgoaukkbd, 2156</td>
+                                <td>(48)8965-4588</td>
+                                <td>
+                                    <button type="button" class="btn btn-primary btn-sm rounded-3"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Editar
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Loja3</td>
+                                <td>Av. das udgoaukkbd, 1589</td>
+                                <td>(48)8968-5488</td>
+                                <td>
+                                    <button type="button" class="btn btn-primary btn-sm rounded-3"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Editar
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
-   
+
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="empresaModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -113,24 +119,24 @@
                     <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
                         <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
                         <label class="btn btn-outline-danger" for="btnradio1">Abilitar</label>
-                      
+
                         <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                        <label class="btn btn-outline-danger" for="btnradio2" 
-                        data-bs-toggle="tooltip" 
-                        data-bs-placement="top"
-                        data-bs-custom-class="custom-tooltip"
-                        data-bs-title="Tem certeza que quer desabilitar?">
-                        Desabilitar
+                        <label class="btn btn-outline-danger" for="btnradio2" data-bs-toggle="tooltip"
+                            data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                            data-bs-title="Tem certeza que quer desabilitar?">
+                            Desabilitar
                         </label>
-                      </div>
+                    </div>
                     <button type="button" class="btn btn-primary btn-sm">Salvar</button>
                     <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Fechar</button>
-                    
+
                 </div>
             </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
