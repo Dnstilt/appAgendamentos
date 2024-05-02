@@ -2,7 +2,7 @@ document.getElementById('calendario').innerHTML = `
 <div class="tabs">
     <div class="tab">
         <button class="tablinks" data-origin="tab1">Cadastrar cliente</button> 
-        <button class="tablinks" data-origin="tab2">Dashboard</button>
+        <button class="tablinks" data-origin="tab2">Atendimentos</button>
     </div>
         
     <div data-target="tab1" class="tabcontent">
@@ -13,12 +13,12 @@ document.getElementById('calendario').innerHTML = `
         <br>
     </div>
         
-    <div data-target="tab2" class="tabcontent">
-        <h3>Agendamentos</h3>
+    <div data-target="tab1" class="tabcontent">
+        <h3></h3>
     </div>
         
-    <div data-target="tab3" class="tabcontent">
-        <h3>Dashboard</h3>
+    <div data-target="tab2" class="tabcontent">
+        <h3>Atendimentos</h3>
     </div>
 </div>
  `;

@@ -1,11 +1,11 @@
 document.getElementById('tabelaDados').innerHTML = `
 <thead>
     <tr class="table-primary p-0 m-0 ">
-        <th scope="col-sm-12 col-lg-3"><&nbspDia&nbsp></th>
-        <th scope="col-sm-12 col-lg-3">Total agendamentos</th>
-        <th scope="col-sm-12col-lg-3">Total de atendimentos</th>
-        <th scope="col-sm-12col-lg-3">Tempo médio por atendimento</th>
-        <th scope="col-sm-12col-lg-3">Atendimentos por hora</th>
+        <th class="col-sm-12 col-lg-2" scope="col"><&nbspDia&nbsp></th>
+        <th class="col-sm-12 col-lg-2" scope="col">Total agendamentos</th>
+        <th class="col-sm-12 col-lg-2" scope="col">Total de atendimentos</th>
+        <th class="col-sm-12 col-lg-2" scope="col">Tempo médio por atendimento</th>
+        <th class="col-sm-12 col-lg-2" scope="col">Atendimentos por hora</th>
     </tr>
     </thead>
     <tbody>

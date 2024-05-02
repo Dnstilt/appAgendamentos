@@ -29,10 +29,13 @@
             <div class="row bg-secondary-subtle ps-2 pe-2">
                 <a class="logo fs-3 text" style="font-family: Kanit, sans-serif; text-decoration: none;">Hora
                     decidida</a>
-                <table id="tabelaDados" class="table table-sm text-center" style="max-width: 1300px; margin: 0;">
-                    <!--Tabela com dados-->
-                </table>
-                <table id="tabelaEmpresas" class="table table-success table-striped" style="max-width: 1300px;">
+                <div  class="table-responsive-sm">
+                    <table id="tabelaDados" class="table table-sm text-center" style="max-width: 1300px; margin: 0;">
+                        <!--Tabela com dados-->
+                    </table>
+                </div>
+                <div class="table-responsive-sm">
+                    <table id="tabelaEmpresas" class="table table-success table-striped" style="max-width: 1300px;">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
@@ -42,7 +45,7 @@
                             <th scope="col">Ações</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="table-group-divider">
                         <tr>
                             <th scope="row">1</th>
                             <td>Jorge e Matheus</td>
@@ -89,7 +92,8 @@
                             </td>
                         </tr>
                     </tbody>
-                </table>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
