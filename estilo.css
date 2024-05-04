@@ -62,22 +62,28 @@ body {
 }
 
 .headline {
-    margin-top: 30px;
     margin-left: 10%;
     flex: 40%;
+    /* border: 1px solid black; */
 }
 
-.headline h2 {
-    font-weight: 900;
-    font-size: 20px;
-    color: #180f4a;
-    padding: 0;
-    margin: 0;
-}
 
 .headline p {
-    color: gray;
+    font-weight: 600;
     text-align: left;
+}
+
+
+.img-headline {
+    margin-right: 5%;
+    margin-left: 5%;
+    flex: 40%;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+.img {
+    max-width: 100%;
 }
 
 .contact-btn {
@@ -104,16 +110,28 @@ section {
 }
 
 .bloco {
-    background-color: #5438FF;
-    margin-top: 20px;
-    padding: 5%;
-    height: 500px;
+    display: flex;
 }
 
-.bloco1 {
-    display: inline-block;
-    margin-top: 5%;
+
+.box {
+    flex-basis: calc(33.33% - 10px);
+    margin-right: 10px;
 }
+
+.box:last-child {
+    margin-right: 0;
+}
+
+.imgbox {
+    margin-left: 10px;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: 5px;
+}
+
 
 .card {
     display: inline-block;
@@ -124,20 +142,20 @@ section {
     border-radius: 10px;
 }
 
-.texto-oculto {
-    display: none;
+.card-text {
+    text-align: center;
 }
 
 footer {
-    /* margin-top: 100px;*/
-    /*height: 200px;*/
     background: #5438FF;
     text-align: center;
 }
 
 .rodape {
-    padding: 5px;;
+    padding: 5px;
+    margin-left: 15px;
 }
+
 
 .whats {
     position: fixed;
