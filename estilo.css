@@ -51,7 +51,6 @@ body {
     margin-left: 5%;*/
 }
 
-
 .header {
     display: flex;
     flex-flow: row wrap;
@@ -59,6 +58,7 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 20px;
+    margin-bottom: 10%;
 }
 
 .headline {
@@ -67,12 +67,10 @@ body {
     /* border: 1px solid black; */
 }
 
-
 .headline p {
     font-weight: 600;
     text-align: left;
 }
-
 
 .img-headline {
     margin-right: 5%;
@@ -97,7 +95,6 @@ body {
     font-size: 20px;
 }
 
-
 section {
     display: inline-block;
     margin: 80px;
@@ -113,10 +110,19 @@ section {
     display: flex;
 }
 
-
 .box {
     flex-basis: calc(33.33% - 10px);
     margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+.box h3 {
+    margin: 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 0 0 10px 10px;
+    font-size: 14px;
+    text-align: center;
 }
 
 .box:last-child {
@@ -132,10 +138,9 @@ section {
     margin: 5px;
 }
 
-
 .card {
     display: inline-block;
-    width: 30%;
+    width: 45%;
     padding: 20px;
     margin: 1%;
     border: 1px solid #0038FF;
@@ -144,21 +149,96 @@ section {
 
 .card-text {
     text-align: center;
+    padding: 10px;
 }
 
 footer {
-    background: #5438FF;
-    text-align: center;
+    background:#0038FF;
+    /* background-color: #333; */
+    color: white;
+    padding: 20px;
+}
+
+.avaliacao {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.comment {
+    width: 200px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.comment img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.comment p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.comment .author {
+    font-size: 12px;
+    font-style: italic;
+    color: #666;
 }
 
 .rodape {
-    padding: 5px;
-    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
 }
 
+.links-direita a {
+    color: white;
+    text-decoration: underline;
+    margin-left: 20px;
+}
 
 .whats {
     position: fixed;
     bottom: 5px;
     right: 5px;
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+}
+
+.block {
+    display: flex;
+}
+
+.square {
+    width: 150px;
+    height: 60px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.square img {
+    width: 70%;
+    margin-left: 20px;
+    object-fit: cover;
+    border-radius: 10px;
 }
