@@ -1,1 +1,1 @@
-[Imagens das telas](./img/calendario.jpg)](./img/calendario.jpg)
+<img src="/img/calendario.jpg" alt="Tela calendario">
