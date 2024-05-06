@@ -47,7 +47,7 @@ document.getElementById('headerPrincipal').innerHTML = `
                                     <div class="invalid-feedback">Sua senha deve conter pelo menos 8 caracteres</div>
                                 </div>
                                 <!--                            <button class="btn btn-primary" type="submit">Submit form</button>-->
-                                <a class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" href="atendedoresGestao.html">Entrar</a>
+                                <a class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit" href="./funcionario.html">Entrar</a>
                                 <hr class="my-4">
                                 <h2 class="fs-5 fw-bold mb-3"></h2>
 

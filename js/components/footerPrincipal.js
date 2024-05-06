@@ -7,7 +7,7 @@ document.getElementById('footerPrincipal').innerHTML = `
               
             <p class="text-light">Rua Laurindo José de Souza, 1150 Barra da lagoa - florianópolis SC</p>
         </div>
-        <div class="col-sm-12 col-md-6 text-end">
+        <div class="col-sm-12 col-md-6 text-end d-flex flex-column">
             <a href="./politica_de_privacidade.html" class="text-decoration-none text-light">Política de privacidade</a>
             <a href="./termos_de_uso" class="text-decoration-none text-light">Termos de uso</a>
             <p class="text-light">Imagens from freepik</p>
