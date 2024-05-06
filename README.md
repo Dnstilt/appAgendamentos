@@ -1,1 +1,1 @@
-<img src="/img/calendario.jpg" alt="Tela calendario">
+<img src="/img/calendario.png" alt="Tela calendario">
