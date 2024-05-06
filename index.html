@@ -21,20 +21,20 @@
     <main>
         <div class="container pt-5">
             <div class="row justify-content-between">
-                <div class="d-flex flex-column justify-content-evenly col-sm-12 col-md-6" style="max-width: 550px;">
+                <div class="d-flex flex-column align-items-center col-sm-12 col-md-6" style="max-width: 550px;">
                     <div class="h1 text-center"> <span class="text-primary" style="text-shadow: -1px -1px 3px rgba(0, 0, 0, 0.233);">Revolucione</span> a gestão dos seus horários e otimize sua agenda. </div>
                     <p>
                        Com nossa solução especializada em atendimento por agendamento você vai <spam class="text-primary fw-bold">eliminar filas e simplificar sua rotina operacional.</spam>  Experimente hoje mesmo e descubra como podemos 
                     elevar sua eficiência a um nível superior! 
                     </p>
-                    <button type="button" class="btn btn-sm btn-primary rounded-pill m-3" data-bs-toggle="modal" data-bs-target="#contactModal">Descubra já! </button> 
+                    <a class="btn btn-sm btn-primary rounded-pill mb-3" data-bs-toggle="modal" data-bs-target="#contactModal" style="width: 100px;">Descubra já! </a> 
                 </div>
                 <!-- Modal -->
                 <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModal" aria-hidden="true">
                     <div class="modal-dialog">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Envie seu email e mensagem que nossa equipe especializada, entrá em contato com você!</h1>
+                          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Envie seu email e mensagem para que nossa equipe especializada, entre em contato!</h1>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -58,7 +58,7 @@
                   </div>
                 <!--End Modal-->
                 <div class="d-inline-flex justify-content-center col-sm-12 col-md-6 align-content-center">
-                    <img src="./img/customer_service_03.jpg" class="rounded-2 shadow" style="max-width: 350px;">
+                    <img src="./img/customer_service_03.jpg" class="rounded-5 shadow" style="max-width: 350px;">
                 </div>
             </div>
         </div>
@@ -68,7 +68,7 @@
           <div class="container p-3" style="max-width: 1300px;">
             <div class="row justify-content-center align-items-center">
                 <div class="d-inline-flex justify-content-center p-0 col-sm-12 col-md-6 col-lg-4 align-content-center">
-                    <img src="./img/fila_em_frente_a_loja.jpg" class="rounded-2 shadow" style="max-width: 350px; max-height: 350px;">
+                    <img src="./img/fila_em_frente_a_loja.jpg" class="rounded-5 shadow" style="max-width: 350px; max-height: 350px;">
                 </div>
             <div class="d-inline-flex justify-content-center col-sm-12 col-md-7 col-lg-4">
                 <div class="text-center" style="max-width: 350px;">
@@ -77,11 +77,36 @@
                         Como nosso objetivo principal, acreditamos que a experiência do seu cliente é fundamental, quanto menos tempo ele perde, maior é a qualidade da sua empresa. Nosso sistema é fácil de usar, agendamentos, reagendamentos e cancelamentos em segundos. Tenha todos os dados de seus atendimentos em tempo real.  
                         Experimente a diferença e comprove como podemos transformar o dia a dia de sua empresa!
                     </p>
+                    <!-- modal button -->
+                    <a class="btn btn-sm btn-primary rounded-pill mb-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      Saiba mais sobre nós.
+                    </a>
+      
+                      <!-- Modal -->
+                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                          <div class="modal-content">
+                          <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="staticBackdropLabel">Quem somos?</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body text-center"> 
+                              <p>Somos uma micro empresa do ramo de software para gestão de negócios, trabalhamos com a venda de software para agendamentos de consultas, retiradas de mercadorias, horários diversos, controle de fluxo de pessoas e atendimentos por hora. Somos uma empresa fundada em Santa Catarina e com abrangência nacinal de clientes.</p>
+                              <p>Nossa orientação é de desenvolvermos produtos para descomplicar a vida de nossos clientes e de seus clientes, com baixo custo de manutenção e segurança.</p>
+                              <p>Sendo nosso parceiro você verá como é bom ter toda a sua agenda em um unico lugar.</p>                          
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                              <button type="button" class="btn btn-primary">Understood</button>
+                          </div>
+                          </div>
+                      </div>
+                      </div>
                 </div>
                 
             </div>
             <div class="d-inline-flex justify-content-center p-0 flex col-sm-12 col-md-6 col-lg-4 align-content-center">
-                <img src="./img/fila_de_pessoas.jpg" class="rounded-2 shadow" style="max-width: 350px; max-height: 350px;">
+                <img src="./img/fila_de_pessoas.jpg" class="rounded-5 shadow" style="max-width: 350px; max-height: 350px;">
             </div>
             </div>
           </div> 
@@ -92,7 +117,7 @@
         <div class="shadow" style="background-color: #3606b95b;">
           <div class="container py-2" style="max-width: 1300px; ">
             <div class="row justify-content-center">
-                <div class="card shadow m-2" style="width: 18rem;">
+                <div class="card shadow m-2 rounded-5" style="width: 18rem;">
                     <img src="./img/tonhão.png" class="card-img-top pt-2" alt="Logo empresa tonhão">
                     <div class="card-body">
                         <h5 class="card-title">Clientes felizes</h5>
@@ -102,8 +127,8 @@
                 </div>
             
             
-                <div class="card m-2" style="width: 18rem;">
-                    <img src="./img/view-luxurious-hotel-interior-space.jpg" class="card-img-top pt-2" alt="card clínica container">
+                <div class="card m-2 rounded-5" style="width: 18rem;">
+                    <img src="./img/view-luxurious-hotel-interior-space.jpg" class="card-img-top pt-2 rounded-5" alt="card clínica container">
                     <div class="card-body">
                     <h5 class="card-title">Clínica Container</h5>
                     <p class="card-text">"Tinhamos um problema com nossos agendamentos e atendimentos, agora controlo todo o fluxo de pacientes e trabalho de nossos médicos." Dra.Jurema proprietária dos consultórios.</p>
@@ -112,7 +137,7 @@
                 </div>
               
               
-                <div class="card m-2" style="width: 18rem;">
+                <div class="card m-2 rounded-5" style="width: 18rem;">
                     <img src="./img/vo_Dina.png" class="card-img-top pt-2 " alt="Vó dina doces">
                     <div class="card-body">
                     <h5 class="card-title">Doces sem fila</h5>
@@ -122,8 +147,8 @@
                 </div>
                
                
-                <div class="card m-2" style="width: 18rem;">
-                    <img src="./img/39388.jpg" class="card-img-top" alt="Desenho de centro logístico">
+                <div class="card m-2 rounded-5" style="width: 18rem;">
+                    <img src="./img/39388.jpg" class="card-img-top rounded-5" alt="Desenho de centro logístico">
                     <div class="card-body">
                     <h5 class="card-title">Retiradas perfeitas.</h5>
                     <p class="card-text">"Tinhamos muita espera nas retiradas de mercadoria, agora tudo flui sem filas." Jorjão du Transporte dono da revendedora China1</p>
@@ -139,7 +164,7 @@
         <div class="shadow" style="background-color: #3606b95b;">
         <div class="container py-2" style="max-width: 1300px; ">
             <div class="row justify-content-center">
-                <div class="card m-2" style="width: 18rem;">
+                <div class="card m-2 rounded-5" style="width: 18rem;">
                     <img src="./img/alisson.png" class="card-img-top mt-2 rounded-5" style="background-color: #515ab4;" alt="Alisson">
                     <div class="card-body">
                         <h5 class="card-title">Front-end and content developer</h5>
@@ -172,7 +197,7 @@
                 </div>
             
             
-                <div class="card m-2" style="width: 18rem;">
+                <div class="card m-2 rounded-5" style="width: 18rem;">
                     <img src="./img/alvaro.png" class="card-img-top mt-2 rounded-5" style="background-color: #351a7e;" alt="card clínica container">
                     <div class="card-body">
                     <h5 class="card-title">Back-end and test developer</h5>
@@ -205,7 +230,7 @@
                 </div>
               
               
-                <div class="card m-2" style="width: 18rem;">
+                <div class="card m-2 rounded-5" style="width: 18rem;">
                     <img src="./img/denis.png" class="card-img-top mt-2 rounded-5" style="background-color: #be0286;" alt="Vó dina doces">
                     <div class="card-body">
                     <h5 class="card-title">Denis Front-end and content developer</h5>
@@ -224,8 +249,8 @@
                 </div>
                
                
-                <div class="card m-2" style="width: 18rem;">
-                    <img src="#" class="card-img-top mt-2 rounded-5" style="background-color: #252525; width: 260px; height: 270px; " alt="Desenho de centro logístico">
+                <div class="card m-2 rounded-5" style="width: 18rem;">
+                    <img src="./img//question_icon.png" class="card-img-top mt-2 rounded-5" style="background-color: #252525; width: 260px; height: 270px; " alt="Desenho de centro logístico">
                     <div class="card-body">
                     <h5 class="card-title">Back-end developer</h5>
                     <p class="card-text">MisterM não gosta de aparecer</p>
