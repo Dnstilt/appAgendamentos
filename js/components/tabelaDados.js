@@ -1,7 +1,7 @@
 document.getElementById('tabelaDados').innerHTML = `
 <thead>
     <tr class="table-primary p-0 m-0 ">
-        <th class="col" scope="col"><&nbspDia&nbsp></th>
+        <th class="col" scope="col"> <button class="btn "><</button> Dia <button class="btn">></button></th>
         <th class="col" scope="col">Total agendamentos</th>
         <th class="col" scope="col">Total de atendimentos</th>
         <th class="col" scope="col">Tempo médio por atendimento</th>
