@@ -34,6 +34,52 @@
                         <!--Tabela com dados-->
                     </table>
                 </div>
+                <button class="btn btn-sm btn-primary m-2 ms-3" data-bs-toggle="modal" data-bs-target="#cadastrarModal" style="width: 100px;">Cadastrar</button>
+                <!-- formulário de cadastro -->
+                <div class="modal fade" id="cadastrarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Novo funcionário</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                  <label for="firstName" class="form-label">Nome</label>
+                                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required="true">
+                                  <div class="invalid-feedback">
+                                    Nome é necessário.
+                                  </div>
+                                </div>
+                    
+                                <div class="col-12">
+                                  <label for="cpf" class="form-label">CPF</label>
+                                  <input type="text" class="form-control" id="cpf" placeholder="xxx.xxx.xxx-xx" required="" spellcheck="false" data-ms-editor="true">
+                                  <div class="invalid-feedback">
+                                    CPF é necessário.
+                                  </div>
+                                </div>
+                    
+                                <div class="col-12">
+                                  <label for="Setor" class="form-label"><span class="text-body-secondary">Setor </span></label>
+                                  <input type="text" class="form-control" id="setor" placeholder="" spellcheck="false" data-ms-editor="true">
+                                </div>
+                                <div class="form-check ms-5">
+                                    <input type="checkbox" class="form-check-input" id="eAdmin">
+                                    <label class="form-check-label" for="eAdmin">É administrador</label>
+                                </div>
+                            </div>    
+                        </div>
+                       
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                          <button type="button" class="btn btn-primary">Salvar funcionário</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                 <!-- Fim do Formulário -->
                 <div class="table-responsive-sm">
                     <table id="tabelaEmpresas" class="table table-success table-striped" style="max-width: 1300px;">
                     <thead>

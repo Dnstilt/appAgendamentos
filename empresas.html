@@ -33,6 +33,66 @@
                         <!--Tabela com dados-->
                     </table>
                 </div>
+                <!-- Form de cadastro de nova empresa -->    
+                <button class="btn btn-sm btn-primary m-2 ms-3" data-bs-toggle="modal" data-bs-target="#cadastrarModal" style="width: 100px;">Cadastrar</button>
+                <!-- formulário de cadastro -->
+                <div class="modal fade" id="cadastrarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Nova Empresa</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                  <label for="firstName" class="form-label">Nome</label>
+                                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required="true">
+                                  <div class="invalid-feedback">
+                                    Nome é necessário.
+                                  </div>
+                                </div>
+                    
+                                <div class="col-12">
+                                    <label for="address" class="form-label">Endereço</label>
+                                    <input type="text" class="form-control" id="address" placeholder="" required="true" spellcheck="false"> 
+                                    <div class="invalid-feedback">
+                                      Por favor coloque um endereço.
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                  <label for="address" class="form-label">Cidade</label>
+                                  <input type="text" class="form-control" id="cidade" placeholder="" required="true" spellcheck="false">
+                                  <div class="invalid-feedback">
+                                    Cidade é necessária.
+                                  </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="address" class="form-label">Estado</label>
+                                    <input type="text" class="form-control" id="cidade" placeholder="" required="true" spellcheck="false">
+                                    <div class="invalid-feedback">
+                                      Estado é necessário.
+                                    </div>
+                                </div>
+                    
+                                <div class="col-12">
+                                  <label for="telefone" class="form-label"><span class="text-body-secondary">Telefone</span></label>
+                                  <input type="tel" class="form-control" id="telefone" placeholder="" spellcheck="false">
+                                </div>
+                                
+                            </div>    
+                        </div>
+                       
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                          <button type="button" class="btn btn-primary">Salvar funcionário</button>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!-- Fim do form -->
                 <div class="table-responsive-sm">
                     <table id="tabelaEmpresas" class="table table-success table-striped" style="max-width: 1300px;">
                         <thead>
