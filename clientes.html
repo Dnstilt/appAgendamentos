@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funcionários</title>
+    <title>Clientes</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -48,7 +48,7 @@
                             <div class="row g-3">
                                 <div class="col-sm-6">
                                   <label for="firstName" class="form-label">Nome</label>
-                                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required="true">
+                                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
                                   <div class="invalid-feedback">
                                     Nome é necessário.
                                   </div>
@@ -56,7 +56,7 @@
                     
                                 <div class="col-12">
                                   <label for="cpf" class="form-label">CPF</label>
-                                  <input type="text" class="form-control" id="cpf" placeholder="xxx.xxx.xxx-xx" required="true" spellcheck="false">
+                                  <input type="text" class="form-control" id="cpf" placeholder="xxx.xxx.xxx-xx" required spellcheck="false">
                                   <div class="invalid-feedback">
                                     CPF é necessário.
                                   </div>
@@ -64,15 +64,15 @@
                     
                                 <div class="col-12">
                                     <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" required="true" id="email" placeholder="you@example.com">
+                                    <input type="email" class="form-control" required id="email" placeholder="you@example.com">
                                     <div class="invalid-feedback">
                                       Porfavor entre com um e-mail válido.
                                     </div>
                                 </div>
 
                                 <div class="col-12">
-                                  <label for="Telefone" class="form-label">Telefone</label>
-                                  <input type="tel" class="form-control" id="telefone" placeholder="" required="true" spellcheck="false" >
+                                  <label for="telefone" class="form-label">Telefone</label>
+                                  <input type="tel" class="form-control" id="telefone" placeholder="(xx) xxxxx-xxxx" required spellcheck="false" >
                                 </div>
                                 
                             </div>    
@@ -165,7 +165,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <table id="tabelaEmpresas" class="table table-success table-striped">
+                    <table id="exemploFuncionario" class="table table-success table-striped">
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
@@ -176,21 +176,23 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <th scope="row">1</th>
-                            <td>Aluisio Mercado</td>
-                            <td>8958759663</td>
-                            <td>aluisio@gmail.com</td>
-                            <td>48-99546-1854</td>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Aluisio Mercado</td>
+                                <td>8958759663</td>
+                                <td>aluisio@gmail.com</td>
+                                <td>48-99546-1854</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
                 <div class="modal-footer">
                     <div class="btn-group btn-group-sm" role="group" aria-label="Basic radio toggle button group">
                         
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" checked>
                         <label class="btn btn-outline-danger" for="btnradio1">Abilitar</label>
                       
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3">
                         <label class="btn btn-outline-danger" for="btnradio3" 
                         data-bs-toggle="tooltip" 
                         data-bs-placement="top"
