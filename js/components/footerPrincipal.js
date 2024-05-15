@@ -9,7 +9,7 @@ document.getElementById('footerPrincipal').innerHTML = `
         </div>
         <div class="col-sm-12 col-md-6 text-end d-flex flex-column">
             <a href="./politica_de_privacidade.html" class="text-decoration-none text-dark">Política de privacidade</a>
-            <a href="./termos_de_uso" class="text-decoration-none text-dark">Termos de uso</a>
+            <a href="./termos_de_uso.html" class="text-decoration-none text-dark">Termos de uso</a>
             <p class="text-dark">Imagens from freepik</p>
         </div>
         </div>    

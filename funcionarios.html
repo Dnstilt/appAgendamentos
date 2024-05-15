@@ -63,8 +63,14 @@
                     
                                 <div class="col-12">
                                   <label for="Setor" class="form-label"><span class="text-body-secondary">Setor </span></label>
-                                  <input type="text" class="form-control" id="setor" placeholder="" spellcheck="false" data-ms-editor="true">
+                                  <select class="form-select" id="state" required="">
+                                    <option>Escolha...</option>
+                                    <option value="text">Recepção</option>
+                                    <option value="text">Balcão</option>
+                                    <option value="text">Admin</option>
+                                  </select>
                                 </div>
+                    
                                 <div class="form-check ms-5">
                                     <input type="checkbox" class="form-check-input" id="eAdmin">
                                     <label class="form-check-label" for="eAdmin">É administrador</label>
@@ -169,8 +175,9 @@
                             <td>
                                 <select class="form-select" id="country" required="">
                                 <option value="">Escolha o setor</option>
-                                <option>Recepção</option>
-                                <option>Balcão</option>
+                                <option value="text">Recepção</option>
+                                <option value="text">Balcão</option>
+                                <option value="text">Admin</option>
                                 </select>
                             </td>
                         </tbody>

@@ -10,11 +10,11 @@ document.getElementById('tabelaDados').innerHTML = `
     </thead>
     <tbody>
         <tr>
-            <th scope="row">24/04/2024</th>
-            <td>123</td>
-            <td>114</td>
-            <td>00:06:23</td>
-            <td>10/h</td>
+            <th scope="row" id="dia">24/04/2024</th>
+            <td id="tAgendamentos">123</td>
+            <td id="tAtendimentos">114</td>
+            <td id="tempoMedio">00:06:23</td>
+            <td id="atendiHora">10/h</td>
         </tr>
     </tbody>
 `
