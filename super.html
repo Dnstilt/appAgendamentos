@@ -32,9 +32,14 @@
         </nav>
     </header>
 <main class="d-flex flex-column align-items-center pt-2 p-1">
-        <div class="d-flex flex-column px-1 rounded-2" style="max-width: 1300px; background-color: rgb(182, 182, 182);">
+        <div class="row bg-secondary-subtle ps-2 pe-2 rounded-2" style="max-width: 1300px; background-color: rgb(182, 182, 182);">
             <!-- Form de cadastro de nova empresa -->    
-            <button class="btn btn-sm btn-primary m-2 ms-3" data-bs-toggle="modal" data-bs-target="#cadastrarModal" style="width: 100px;">Cadastrar</button>
+            <button class="btn btn-sm btn-primary m-2 ms-3" data-bs-toggle="modal" data-bs-target="#cadastrarModal" style="width: 100px;">
+                Cadastrar
+            </button>
+            <button type="button" class="btn btn-primary btn-sm rounded-3 m-2 ms-3" data-bs-toggle="modal" data-bs-target="#editarModal" style="width: 100px;">
+                Editar
+            </button>
             <!-- formulário de cadastro -->
             <div class="modal fade" id="cadastrarModal" tabindex="-1" aria-labelledby="cadastrarModal" aria-hidden="true">
                 <div class="modal-dialog">
@@ -95,59 +100,12 @@
             <!-- Fim do form -->
             <div class="table-responsive-sm">
                 <table id="tabelaEmpresas" class="table table-success table-striped" style="max-width: 1300px;">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Nome</th>
-                            <th scope="col">Endereço</th>
-                            <th scope="col">Telefone</th>
-                            <th scope="col">Ações</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Loja1</td>
-                            <td>Rua das selikihosadufhoas, 215</td>
-                            <td>(48)5687-4596</td>
-                            <td>
-                                <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-primary btn-sm rounded-3"
-                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Editar
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Loja2</td>
-                            <td>Av. dos dkajusudgoaukkbd, 2156</td>
-                            <td>(48)8965-4588</td>
-                            <td>
-                                <button type="button" class="btn btn-primary btn-sm rounded-3"
-                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Editar
-                                </button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Loja3</td>
-                            <td>Av. das udgoaukkbd, 1589</td>
-                            <td>(48)8968-5488</td>
-                            <td>
-                                <button type="button" class="btn btn-primary btn-sm rounded-3"
-                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                    Editar
-                                </button>
-                            </td>
-                        </tr>
-                    </tbody>
+                    
                 </table>
             </div>
         </div> 
         <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="empresaModal" aria-hidden="true">
+    <div class="modal fade" id="editarModal" tabindex="-1" aria-labelledby="empresaModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -201,6 +159,15 @@
     <script src="js/fullcalendar/moment.min.js"></script>
     <script src="js/fullcalendar/fullcalendar.min.js"></script>
     
-
+    <script src="js/scripts.js"></script> 
+    <script>
+        //Cria a tabela de funcionários   
+        const dadosEmpresas = '[{"id":1,"nome":"Loja1","endereco":"Rua das selikihosadufhoas, 215","telefone":"(48)5687-4596"},{"id":2,"nome":"Loja2","endereco":"Av. dos dkajusudgoaukkbd, 2156","telefone":"(48)8965-4588"},{"id":3,"nome":"Loja3","endereco":"Av. das udgoaukkbd, 1589","telefone":"(48)8968-5488"}]';
+        const tabelaEmpresas = criarTabela(dadosEmpresas);
+        const container = document.getElementById('tabelaEmpresas');
+        let bootstrapEmpresas = "table" + " " + "table-striped" + " " + "table-success"; 
+        tabelaEmpresas.className = bootstrapEmpresas;
+        container.appendChild(tabelaEmpresas); 
+    </script>
 </body>
 </html>

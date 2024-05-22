@@ -14,9 +14,7 @@
     <link rel="stylesheet" href="css/fullcalendar/fullcalendar.min.css">
     <link rel="stylesheet" href="css/fullcalendar/fullcalendar.print.min.css"  media='print'>
     <link rel="stylesheet" href="./css/sidebar.css">
-    <script defer src="./js/components/calendario.js"></script>
-    <script defer src="./js/components/sidebar.js"></script>
-    <script defer src="./js/components/tabelaDados.js"></script>     
+       
 </head>
 
 <body>
@@ -28,14 +26,14 @@
     <div class="main d-flex flex-column bg-secondary">
         <div class="row bg-secondary-subtle ps-2 pe-2">          
             <a class="logo fs-3 text" style="font-family: Kanit, sans-serif; text-decoration: none;">Hora decidida</a>
-            <div  class="table-responsive-sm">
-                <table id="tabelaDados" class="table table-sm text-center" style="max-width: 1300px; margin: 0;">
+            <div  class="table-responsive-sm p-1">
+                <table id="tabelaDados" class="table table-sm text-center mb-2" style="max-width: 1300px; margin: 0;">
                     <!--Tabela com dados-->
                 </table>
             </div>                  
         </div>
             <div class="d-flex flex-column align-items-start pt-2 p-1">
-                <div class="d-flex flex-column col-12 px-1 rounded-2" style="max-width: 1300px; background-color: rgb(182, 182, 182);">
+                <div class="d-flex flex-column col-12 px-1 rounded-2" style="max-width: 1400px; background-color: rgb(182, 182, 182);">
                     <div id="calendario">
                         <!--Fullcalendar-->
                     </div>
@@ -44,14 +42,28 @@
         </div>
     </div>
 
-    <script defer src="./js/script.js"></script>
-    
+    <script defer src="./js/components/calendario.js"></script>
+    <script defer src="./js/components/sidebar.js"></script>
+ 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/fullcalendar/moment.min.js"></script>
     <script src="js/fullcalendar/fullcalendar.min.js"></script>
+    <script src="js/scripts.js"></script> 
+    <script>
+        //Cria a tabela de dados
+        const dadosDia = '[{"dia": "30/04/2024","tAgendamentos": 140,"tAtendimentos": 125,"tempoMedio": "6:21min","atendiHora": "11"}]';
+        const tabelaDados = criarTabela(dadosDia);
+        const container2 = document.getElementById('tabelaDados');
+        let bootstrapDados = "table" + " " + "table-striped" + " " + "table-warning";
+        console.log(bootstrapDados);
+        tabelaDados.className = bootstrapDados
+        container2.appendChild(tabelaDados);
+    </script>
+
 </body>
-</html>
-</body>
+
+
+
 
 </html>
