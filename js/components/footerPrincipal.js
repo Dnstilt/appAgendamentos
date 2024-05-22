@@ -1,5 +1,5 @@
 document.getElementById('footerPrincipal').innerHTML = ` 
-<div class="mt-5" style="background-color: #3606b95b;">
+<div class="mt-5 pt-5" style="background-color: #3606b95b;">
     <div class="container" style=" width: 100%;">
         <div class="row p-3">
         <div class="col-sm-12 col-md-6 " class="text-light">

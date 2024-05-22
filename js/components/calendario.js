@@ -8,7 +8,9 @@ document.getElementById('calendario').innerHTML = `
     <div data-target="tab1" class="tabcontent">
         <br>
         <div class="calendario">
-            <div class="table-responsive" id="calendarFull"></div>
+            <div class="table-responsive" id="calendarFull">
+                
+            </div>
         </div>
         <br>
     </div>

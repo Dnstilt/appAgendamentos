@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="./css/sidebar.css">
     <script defer src="./js/components/sidebar.js"></script>
-    <script defer src="./js/components/tabelaDados.js"></script>
+    
 </head>
 
 <body>
@@ -35,7 +35,11 @@
                     </table>
                 </div>
                 <!-- Formulário para cadastrar novo cliente -->
-                <button class="btn btn-sm btn-primary m-2 ms-3" data-bs-toggle="modal" data-bs-target="#cadastrarModal" style="width: 100px;">Cadastrar</button>
+                <button class="btn btn-sm btn-primary rounded-3 m-2 ms-3" data-bs-toggle="modal" data-bs-target="#cadastrarModal" style="width: 100px;">Cadastrar</button>
+                <button type="button" class="btn btn-primary btn-sm rounded-3 m-2 ms-3" data-bs-toggle="modal" data-bs-target="#editarModal" style="width: 100px;">
+                    Editar
+                </button>
+               
                 <!-- formulário de cadastro -->
                 <div class="modal fade" id="cadastrarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
@@ -87,68 +91,8 @@
                 </div>
                 <!-- Fim de formulário -->
                 <div class="table-responsive-sm">
-                    <table id="tabelaEmpresas" class="table table-success table-striped" style="max-width: 1300px;">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Nome</th>
-                                <th scope="col">CPF</th>
-                                <th scope="col">E-mail</th>
-                                <th scope="col">Telefone</th>
-                                <th scope="col">Ações</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Jurema Alena</td>
-                                <td>6548759663</td>
-                                <td>jurema@gmail.com</td>
-                                <td>48-99854-1236</td>
-                                <!-- Button trigger modal -->
-                                <td>
-                                <button type="button" class="btn btn-primary btn-sm rounded-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                Editar
-                                </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Morato Catato</td>
-                                <td>3658759663</td>
-                                <td>morato@gmail.com</td>
-                                <td>48-99584-1254</td>
-                                <td>
-                                    <button type="button" class="btn btn-primary btn-sm rounded-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        Editar
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Aluisio Mercado</td>
-                                <td>8958759663</td>
-                                <td>aluisio@gmail.com</td>
-                                <td>48-99546-1854</td>
-                                <td>
-                                    <button type="button" class="btn btn-primary btn-sm rounded-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        Editar
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>Fábio Mosca</td>
-                                <td>8548759663</td>
-                                <td>fabiom@gmail.com</td>
-                                <td>48-99567-5148</td>
-                                <td>
-                                    <button type="button" class="btn btn-primary btn-sm rounded-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        Editar
-                                    </button>
-                                </td>
-                            </tr>
-                        </tbody>
+                    <table id="tabelaClientes" class="table table-success table-striped" style="max-width: 1300px;">
+                        
                     </table>
                 </div>     
                     
@@ -157,7 +101,7 @@
     </div>
    
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="empresaModal" aria-hidden="true">
+    <div class="modal fade" id="editarModal" tabindex="-1" aria-labelledby="empresaModal" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -215,5 +159,25 @@
         function myFunction() {
             document.getElementById("cadastrarCliente").submit();
         }
+    </script>
+    <script src="js/scripts.js"></script> 
+    <script>
+        //Cria a tabela de dados
+        const dadosDia = '[{"dia": "30/04/2024","tAgendamentos": 140,"tAtendimentos": 125,"tempoMedio": "6:21min","atendiHora": "11"}]';
+        const tabelaDados = criarTabela(dadosDia);
+        const container2 = document.getElementById('tabelaDados');
+        let bootstrapDados = "table" + " " + "table-striped" + " " + "table-warning";
+        console.log(bootstrapDados);
+        tabelaDados.className = bootstrapDados
+        container2.appendChild(tabelaDados);
+    </script>
+    <script>
+        //Cria a tabela de funcionários   
+        const dadosClientes = '[{"id":1,"nome":"Jurema Alena","cpf":"6548759663","email":"jurema@gmail.com","telefone":"48-99854-1236"},{"id":2,"nome":"Morato catato","cpf":"3658759663","email":"morato@gmail.com","telefone":"48-99584-1254"},{"id":3,"nome":"Aluisio Mercado","cpf":"8958759663","email":"aluisio@gmail.com","telefone":"48-99546-1854"},{"id":4,"nome":"Fábio Mosca","cpf":"8548759663","email":"fabiom@gmail.com","telefone":"48-99567-5148"}]';
+        const tabelaClientes = criarTabela(dadosClientes);
+        const container = document.getElementById('tabelaClientes');
+        let bootstrapClientes = "table" + " " + "table-striped" + " " + "table-success"; 
+        tabelaClientes.className = bootstrapClientes;
+        container.appendChild(tabelaClientes);
     </script>
 </body>
